@@ -1,0 +1,52 @@
+<!-- <% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <%theme["Themes"][0]["Theme"][0]["ThemeName"].each do |t|%>
+    <%=t%><br>
+  <% end %>
+<% end %>
+
+===================================
+<% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <ul><%=theme["Themes"][0]["Theme"][0]["ThemeName"][0]%></ul>
+<% end %>
+
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |info| %>
+  <ul><img src="<%= info["Images"][0]["ImageURL"][2] %>"><%= info["Address"][0] %> <%= info["City"][0]%></ul>
+  <%=info["Themes"][0]["Theme"][0]["ThemeName"][0]%>
+<% end %> -->
+
+
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |info| %>
+  <ul><%= link_to image_tag(info["Images"][0]["ImageURL"][1]), "http://#{info["URL"][0]}" %><br>
+	 <%= link_to info["Title"][0], "http://#{info["URL"][0]}"%> <br>
+	 <%= info["ShortDetails"][0]%><br>
+     
+     <% unless info["Address"][0].blank? %> 
+	   <%= info["Address"][0] %> <br>
+	 <% end %>
+     <% unless info["City"][0].blank? %> 
+		<%= info["City"][0]%>, 
+     <% end %>
+     <% unless info["State"][0].blank? %>
+       <%= info["State"][0] %> 
+     <% end %> 
+     <% unless info["ZipCode"][0].blank? %>
+	   <%= info["ZipCode"][0]%><br>
+	 <% end %>
+     <% unless info["Country"][0].blank? %>
+	   <%= info["Country"][0]%><br>
+	 <% end%>
+
+	 Supplied By: <%= info["SupplierName"][0] %>  |  Expires: <%= info["ExpirationDate"][0]%>
+    <br> <b>Theme:</b><br>
+  <%info["Themes"][0]["Theme"].each do |theme|%>
+    <%=theme["ThemeName"][0]%><br>
+  <% end %>
+  </ul>
+<% end %>
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <ul><%=theme["DealOffers"][0]["DealOffer"][0]["FromPrice"][0]["Amount"][0]%></ul>
+<% end %>
+

@@ -1,0 +1,16 @@
+<% @data["HotelList"]["HotelSummary"].each do |h| %>
+  <%=h["name"] %>                       $<%= h["RoomRateDetailsList"]["RoomRateDetails"]["RateInfo"]["ChargeableRateInfo"]["nightlyRateTotal"]%><br>
+  <%=h["address1"] %><br>
+  <%=h["city"] %>, <%=h["stateProvinceCode"] %> <%=h["postalCode"] %><br>
+  <%=h["countryCode"] %><br>
+  Trip Advisor Rating <%=h["hotelRating"] %><br>
+  <%= image_tag("http://images.travelnow.com" + h["thumbNailUrl"]) %><br>
+  ----------------<br>
+  <!-- <% h["RoomRateDetailsList"]["RoomRateDetails"].keys.each do |room| %>
+    <%= room %><br>
+  <% end %> -->
+  ----------------<br>
+  
+  <br>
+
+<% end %>

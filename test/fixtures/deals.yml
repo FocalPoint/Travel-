@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  zipcode: MyString
+  address: MyString
+  city: MyString
+  country: MyString
+  valid_dates: MyString
+  from_price: 9.99
+  to_price: 9.99
+  price_qualification_code: MyString
+  airport_id: MyString
+  encoded_id: MyString
+
+two:
+  title: MyString
+  zipcode: MyString
+  address: MyString
+  city: MyString
+  country: MyString
+  valid_dates: MyString
+  from_price: 9.99
+  to_price: 9.99
+  price_qualification_code: MyString
+  airport_id: MyString
+  encoded_id: MyString

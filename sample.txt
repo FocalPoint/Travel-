@@ -1,0 +1,13 @@
+HotelID|Name|Caption|URL|Supplier|Width|Height|ByteSize|ThumbnailURL|DefaultImage
+4110|Resorts Casino Hotel Atlantic City|Exterior|http://images.travelnow.com/hotelimages/s/010000/010489A.jpg|Sabre Hotels|400|500|37115|http://images.travelnow.com/hotelimages/s/010000/010489A-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Lobby|http://images.travelnow.com/hotelimages/s/010000/010489B.jpg|Sabre Hotels|500|378|43806|http://images.travelnow.com/hotelimages/s/010000/010489B-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Guestroom|http://images.travelnow.com/hotelimages/s/010000/010489C.jpg|Sabre Hotels|384|288|27894|http://images.travelnow.com/hotelimages/s/010000/010489C-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Recreation|http://images.travelnow.com/hotelimages/s/010000/010489D.jpg|Sabre Hotels|375|500|22331|http://images.travelnow.com/hotelimages/s/010000/010489D-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Choice1|http://images.travelnow.com/hotelimages/s/010000/010489E.jpg|Sabre Hotels|500|378|42434|http://images.travelnow.com/hotelimages/s/010000/010489E-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Choice2|http://images.travelnow.com/hotelimages/s/010000/010489F.jpg|Sabre Hotels|361|288|25596|http://images.travelnow.com/hotelimages/s/010000/010489F-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Exterior|http://images.travelnow.com/hotelimages/s/010000/010489A.jpg|Worldspan Hotels|400|500|37115|http://images.travelnow.com/hotelimages/s/010000/010489A-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Lobby|http://images.travelnow.com/hotelimages/s/010000/010489B.jpg|Worldspan Hotels|500|378|43806|http://images.travelnow.com/hotelimages/s/010000/010489B-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Guestroom|http://images.travelnow.com/hotelimages/s/010000/010489C.jpg|Worldspan Hotels|384|288|27894|http://images.travelnow.com/hotelimages/s/010000/010489C-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Recreation|http://images.travelnow.com/hotelimages/s/010000/010489D.jpg|Worldspan Hotels|375|500|22331|http://images.travelnow.com/hotelimages/s/010000/010489D-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Choice1|http://images.travelnow.com/hotelimages/s/010000/010489E.jpg|Worldspan Hotels|500|378|42434|http://images.travelnow.com/hotelimages/s/010000/010489E-thumb.jpg|False
+4110|Resorts Casino Hotel Atlantic City|Choice2|http://images.travelnow.com/hotelimages/s/010000/010489F.jpg|Worldspan Hotels|361|288|25596|http://images.travelnow.com/hotelimages/s/010000/010489F-thumb.jpg|False

@@ -1,0 +1,34 @@
+<!-- <%= form_tag("pages/hotwire", :method => "get") do %>
+<%= select_tag(:price_range, options_for_select([["$1-$100", *~100], ["$100-$200", 200-300]]))  %>
+<%= submit_tag ("Find It!")%>
+<% end %> -->
+<% @data["HotelList"]["HotelSummary"].each do |h| %>
+  <%=h["order"]%><br>
+  <%=h["hotelId"] %><br>
+  <%=h["name"] %><br>
+  <%=h["address1"] %><br>
+  <%=h["city"] %><br>
+  <%=h["stateProvinceCode"] %><br>
+  <%=h["postalCode"] %><br>
+  <%=h["countryCode"] %><br>
+  <%=h["airportCode"] %><br>
+  <%=h["supplierType"] %><br>
+  <%=h["propertyCategory"] %><br>
+  <%=h["hotelRating"] %><br>
+  <%= image_tag("http://api.ean.com" + h["thumbNailUrl"]) %><br>
+  
+  ----------------<br>
+  <% h["RoomRateDetailsList"]["RoomRateDetails"].keys.each do |room| %>
+    <%= room %><br>
+  <% end %>
+  ----------------<br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["roomTypeCode"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["rateCode"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["maxRoomOccupancy"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["quotedRoomOccupancy"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["minGuestAge"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["minGuestAge"]%><br>
+  <%= h["RoomRateDetailsList"]["RoomRateDetails"]["roomDescription"]%><br>
+  ==========================================<br>
+  ==========================================<br>
+<% end %>

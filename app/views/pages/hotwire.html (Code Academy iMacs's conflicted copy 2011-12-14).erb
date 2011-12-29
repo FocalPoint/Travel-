@@ -1,0 +1,39 @@
+<!-- <% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <%theme["Themes"][0]["Theme"][0]["ThemeName"].each do |t|%>
+    <%=t%><br>
+  <% end %>
+<% end %>
+
+===================================
+<% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <ul><%=theme["Themes"][0]["Theme"][0]["ThemeName"][0]%></ul>
+<% end %>
+
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |info| %>
+  <ul><img src="<%= info["Images"][0]["ImageURL"][2] %>"><%= info["Address"][0] %> <%= info["City"][0]%></ul>
+  <%=info["Themes"][0]["Theme"][0]["ThemeName"][0]%>
+<% end %> -->
+
+
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |info| %>
+  <ul><img src="<%= info["Images"][0]["ImageURL"][2] %>"><%=info["Title"][0]%> 
+    <br> <%= info["Address"][0] %> 
+    <br><%= info["City"][0]%>
+    <br><% unless info["State"][0].blank? %>
+    <%= info["State"][0].blank? %>
+    <% end %> <br> 
+    <%= info["ZipCode"][0]%>
+    <br><%= info["Country"][0]%>
+    <br> <b>Theme:</b><br>
+  <%info["Themes"][0]["Theme"].each do |theme|%>
+    <%=theme["ThemeName"][0]%><br>
+  <% end %>
+  </ul>
+<% end %>
+
+<% @data["Result"][0]["TravelTickerDeal"].each do |theme|%>
+  <ul><%=theme["DealOffers"][0]["DealOffer"][0]["FromPrice"][0]["Amount"][0]%></ul>
+<% end %>
+

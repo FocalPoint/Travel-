@@ -1,0 +1,12 @@
+<% @deals.each do |deal| %>
+  <% deal.keys.each do |key| %>
+    <p><strong><%= key %></strong>: (<%= deal[key].class %>) <%= deal[key] %></p>
+  <% end %>
+  <hr/>
+<% end %>
+
+<% @deals.each do |deal| %>
+  <%=deal["Address"]%>
+  <hr/>
+<% end %>
+
